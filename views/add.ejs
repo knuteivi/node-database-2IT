@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Legg til kunde</h1>
+    <form action="/add" method="post">
+        <label>ID</label>
+        <input type="text" name="id" value="<%= Id %>">
+        <label>Navn</label>
+        <input type="text" name="navn" value="<%= Navn %>">
+        <label>Epost</label>
+        <input type="text" name="epost" value="<%= Epost %>">
+        <input type="submit" value="Legg til kunde">
+    </form>
+</body>
+</html>

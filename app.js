@@ -17,6 +17,11 @@ app.get('/', function(req, res, next){
     });
 });
 
+app.get('/add', function(req, res, next){
+    //render to add.ejs
+    res.render('add',{Id: '', Navn: 'Knut', Epost: ''});
+});
+
 app.listen(PORT, function (err){
     if (err) console.log(err);
     console.log('Server listening on PORT', PORT);
